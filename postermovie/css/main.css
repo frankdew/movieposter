@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+	/* De width en height worden berekend aan de hand van content, INCLUSIEF eventuele extra padding en border eigenschappen. */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 100%;
+}
+body {
+	background-color: rgba(169,165,165,1.00);
+		background-image: url('../images/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 1300px;
+	height: 1000px;
+	background-image: url(../images/jackie-brown-bg-page.jpg); /*Achtergrond image */
+	background-repeat: no-repeat;
+	background-color: #010101;
+	clear: both;
+	overflow: hidden;
+}
+
+/******************************
+	FORMAAT OPTIES
+******************************/
+.sizes  {
+	margin-top: 39%;
+	/* scheef hangen van de (text)opties voor videoformaat */
+	-ms-transform: skewX(20deg); /* IE 9 */
+	-webkit-transform: skewX(20deg); /* Safari */
+	transform: skewX(20deg);
+	
+	font-weight: 400;
+	margin-left: -6%;
+}
+
+/******************************
+	FORMAAT TITEL STYLING
+******************************/
+.view-header {
+	color: #F1BF2D;
+	font-family: baumans; /* Font van Adobe Edge Web */
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.7em;
+	letter-spacing: 1px;
+	padding-left: 35%;
+	margin-bottom: 1%;
+	font-variant: small-caps;
+}
+
+/******************************
+	FORMAAT LINKS STYLING
+******************************/
+.sizes a {
+	font-family: baumans;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #F1BF2D;
+	padding-left: 35%;
+	padding-bottom: 6px;
+	font-weight: 400;
+	text-decoration: none;
+	text-indent: 5%;
+	line-height: 1.3em;
+}
+
+/******************************
+	PAGE TITEL STYLING
+******************************/
+.container .best-view {
+	color: #F1BF2D;
+	font-family: baumans; 
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.2em;
+	letter-spacing: 2px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 4%;
+}
+
+/******************************
+	POSITIONERING VIDEO
+******************************/
+.container .small-video {
+	margin-left: 37%;
+	margin-top: 27.7%;
+}
+
+.container .medium-video {
+	margin-left: 35.8%;
+	margin-top: 15.3%;
+}
+
+.container .large-video {
+	margin-left: 8.4%;
+	margin-top: 5.24%;
+}
+
+/******************************
+	TERUG OPTIE
+******************************/
+.container .back {
+	color: #F1BF2D;
+	font-family: baumans;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2em;
+	font-variant: small-caps;
+	padding-left: 1%;
+	margin-top: 7%;
+	float: left;
+}
+
+/******************************
+	CONTROLS STYLING
+******************************/
+.vjs-matrix button.vjs-big-play-button {
+	border: 0.3rem solid rgba(241,186,62,0.40);
+	height: 3.3rem;
+}
+.vjs-matrix .vjs-icon-placeholder {
+	color: rgba(241,186,62,0.42);
+}
+.vjs-matrix button.vjs-big-play-button:hover {
+	border: 0.5rem double rgba(241,186,62,0.80);
+}
